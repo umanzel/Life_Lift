@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.SignUp">
+
+    <TextView
+        android:id="@+id/Cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/cadastro"
+        app:layout_constraintBottom_toTopOf="@+id/textNome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <EditText
+        android:id="@+id/textNome"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/nome"
+        app:layout_constraintBottom_toTopOf="@+id/textCPF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cadastro" />
+
+    <EditText
+        android:id="@+id/textSenha"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/prompt_password"
+        app:layout_constraintBottom_toTopOf="@+id/rProfissional"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/prompt_email"
+        app:layout_constraintBottom_toTopOf="@+id/textSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCidade" />
+
+    <EditText
+        android:id="@+id/textCidade"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cidade"
+        app:layout_constraintBottom_toTopOf="@+id/textEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCEP" />
+
+    <EditText
+        android:id="@+id/textCEP"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cep"
+        app:layout_constraintBottom_toTopOf="@+id/textCidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBairro" />
+
+    <EditText
+        android:id="@+id/textUF"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/uf"
+        app:layout_constraintBottom_toTopOf="@+id/textCidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textCEP"
+        app:layout_constraintTop_toBottomOf="@+id/textBairro" />
+
+    <EditText
+        android:id="@+id/textBairro"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/bairro"
+        app:layout_constraintBottom_toTopOf="@+id/textCEP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNumero" />
+
+    <EditText
+        android:id="@+id/textNumero"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/numero"
+        app:layout_constraintBottom_toTopOf="@+id/textBairro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRua" />
+
+    <EditText
+        android:id="@+id/textRua"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/rua"
+        app:layout_constraintBottom_toTopOf="@+id/textNumero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTelefone" />
+
+    <EditText
+        android:id="@+id/textTelefone"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/telefone"
+        app:layout_constraintBottom_toTopOf="@+id/textRua"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCPF" />
+
+    <EditText
+        android:id="@+id/textCPF"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cpf"
+        app:layout_constraintBottom_toTopOf="@+id/textTelefone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNome" />
+
+    <Button
+        android:id="@+id/bCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/enviar"
+        app:layout_constraintStart_toEndOf="@+id/rCliente"
+        app:layout_constraintTop_toBottomOf="@+id/textSenha" />
+
+    <RadioButton
+        android:id="@+id/rProfissional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="46dp"
+        android:text="@string/profissional"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rCliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSenha" />
+
+    <RadioButton
+        android:id="@+id/rCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/cliente"
+        app:layout_constraintStart_toEndOf="@+id/rProfissional"
+        app:layout_constraintTop_toBottomOf="@+id/textSenha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

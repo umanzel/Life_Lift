@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_persona">
+
+    <fragment
+        android:id="@+id/nav_persona"
+        android:name="com.example.lifelift.ui.persona.fragment_persona"
+        android:label="@string/menu_agente"
+        tools:layout="@layout/fragment_persona">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_agendar"
+        android:name="com.example.lifelift.ui.agendar.AgendarFragment"
+        android:label="@string/menu_agendar"
+        tools:layout="@layout/fragment_agendar" />
+
+    <fragment
+        android:id="@+id/nav_vdAula"
+        android:name="com.example.lifelift.ui.videoaula.VideoAulaFragment"
+        android:label="@string/menu_vdAula"
+        tools:layout="@layout/fragment_videoaula" />
+
+    <fragment
+        android:id="@+id/nav_acompanhamento"
+        android:name="com.example.lifelift.ui.acompanhamento.AcompanhamentoFragment"
+        android:label="@string/menu_acompanhamento"
+        tools:layout="@layout/fragment_acompanhamento" />
+
+    <fragment
+        android:id="@+id/nav_sair"
+        android:name="com.example.lifelift.ui.login.LoginActivity"
+        android:label="@string/menu_sair"
+        tools:layout="@layout/activity_login" />
+</navigation>

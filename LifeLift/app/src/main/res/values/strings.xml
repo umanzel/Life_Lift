@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Life Lift</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_up">Cadastrar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="menu_agente">Cliente/Profissional</string>
+    <string name="welcome">"Bem vindo!"</string>
+    <string name="invalid_username">Usuário inválido</string>
+    <string name="invalid_password">Senha precisa ser maior que 5 caracteres</string>
+    <string name="login_failed">"Falha ao entrar"</string>
+    <string name="title_activity_main">Life Lift</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Persona</string>
+    <string name="nav_header_subtitle">Personal</string>
+    <string name="nav_header_desc">Foto de perfilr</string>
+    <string name="action_settings">Configurações</string>
+    <string name="cadastro">Seja bem vindo, vamos realizar seu cadastro!</string>
+    <string name="nome">Nome</string>
+    <string name="cpf">CPF</string>
+    <string name="telefone">Telefone</string>
+    <string name="rua">Rua</string>
+    <string name="numero">Número</string>
+    <string name="bairro">Bairro</string>
+    <string name="cep">CEP</string>
+    <string name="uf">UF</string>
+    <string name="cidade">Cidade</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="enviar">Enviar</string>
+    <string name="profissional">Profissional</string>
+    <string name="cliente">Cliente</string>
+    
+    <string name="menu_agendar">Agendar</string>
+    <string name="menu_vdAula">Video Aula</string>
+    <string name="menu_acompanhamento">Acompanhamento</string>
+    <string name="menu_sair">Sair</string>
+
+    <string name="home_second">Home Second</string>
+</resources>
